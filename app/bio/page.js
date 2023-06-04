@@ -7,7 +7,7 @@ const images = ['1.jpg', '2.jpg', '3.jpg', '4.jpg', '5.jpg', '6.jpg', '7.jpg', '
 export default function Bio() {
   return (
     <main>
-        <section>
+        <section className={styles.bio}>
         <div className="wrapper">
             <div className={styles.inner}>
                 <p>
@@ -42,8 +42,8 @@ export default function Bio() {
                     taking my creativity to new heights. . Of the projects of
                     which I am most proud to have been a part, the virtual
                     reality production “Love Birds of the Twin Towers” that
-                    was presented at the film festival in Tribeca, New
-                    York stands out. 
+                    was presented at the <a>film festival in Tribeca, New
+                    York</a> stands out. 
                 </p>
                 <p>
                     This was the moment in which I discovered that my
@@ -53,8 +53,7 @@ export default function Bio() {
                     expression.
                 </p>
                 <p>
-                    Among my most precious works are also the short films: &quot;Live, revive, remorse, repeat&quot; and
-                    &quot;The Intruder&quot; made in conjunction with Epic Games and MediaMonks, as the main artist
+                    Among my most precious works are also the short films: <span>&quot;Live, revive, remorse, repeat&quot;</span> and <span>&quot;The Intruder&quot;</span> made in conjunction with Epic Games and MediaMonks, as the main artist
                     for a series of projects and development of oriented 3D production to the movies.
                     The art, creative direction, cameras and lighting are my own.
                 </p>
@@ -62,13 +61,37 @@ export default function Bio() {
         </div>
         </section>
         <section>
-            <div className={styles.images}>
-                {images.map((img, index) => 
-                <div className={styles.image} key={index}>
-                    <Media src={'/images/bio/' + img} alt="" />
+            <div className={styles.video}>
+                <div className={styles.vimeoWrap}>
+                    <div className={styles.vimeoWrapInner}>
+                    <iframe
+                    src="https://player.vimeo.com/video/560672013?h=560672013&amp;app_id=122963\"
+                    frameborder="0"
+                    allowfullscreen
+                    title="The Intruder"
+                    />
+                    </div>
+
                 </div>
-                )}
+                <div className={styles.vimeoWrap}>
+                    <div className={styles.vimeoWrapInner}>
+                    <iframe
+                    src="https://player.vimeo.com/video/534893547?h=534893547&amp;app_id=122963\"
+                    frameborder="0"
+                    allowfullscreen
+                    title="The Intruder"
+                    />
+                    </div>
+
+                </div>
             </div>
+        </section>
+        <section>
+            {images.map((img, index) => 
+            <div className={styles.image} key={index}>
+                <Media src={'/images/bio/' + img} alt="" />
+            </div>
+            )}
         </section>
     </main>
   )
