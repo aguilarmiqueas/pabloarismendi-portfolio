@@ -1,13 +1,29 @@
 :root {
-  --max-width: 1100px;
+  --max-width: 900px;
+  --max-width-media: 1600px;
+  --width: 95%;
   --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
     "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
     "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 
+  // spacing
   --spacing-s: 1rem;
   --spacing-m: 2rem;
   --spacing-l: 4rem;
   --spacing-xl: 8rem;
+
+  // fonts
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 24px;
+  --font-size-xl: 48px;
+  --line-height: 1.4;
+
+  // breakpoints
+  --mobile: 480px;
+  --tablet: 768px;
+  --desktop-s: 1024px;
+  --desktop-l: 1400px;
 }
 
 * {
@@ -37,4 +53,42 @@ body {
   background-size: 512px;
   display: flex;
   flex-direction: column;
+}
+
+h1 {
+  font-size: var(--font-size-l);
+  max-width: var(--max-width);
+}
+
+p {
+  font-size: var(--font-size-m);
+  line-height: 1.6;
+  margin: var(--spacing-s) 0;
+  max-width: var(--max-width);
+  width: 100%;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  // max-width: var(--max-width);
+  min-height: 100vh;
+  margin: var(--spacing-m) 0;
+  width: var(--width);
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.wrapper {
+  max-width: var(--max-width);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }

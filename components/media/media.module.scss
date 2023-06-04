@@ -1,0 +1,14 @@
+.media {
+  width: var(--width);
+  max-width: var(--max-width-media);
+  margin: var(--spacing-l) 0;
+  height: auto;
+  img {
+    width: 100%;
+  }
+}
+
+.quote {
+  font-size: var(--font-size-s);
+  margin: var(--spacing-s) 0;
+}
