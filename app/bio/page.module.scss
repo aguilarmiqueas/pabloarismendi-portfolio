@@ -10,6 +10,7 @@
 }
 
 .bio {
+  margin-top: var(--spacing-m);
   a {
     text-decoration: underline;
   }
@@ -71,4 +72,8 @@
       padding-left: var(--spacing-s);
     }
   }
+}
+
+.sectionVideo {
+  margin-top: var(--spacing-xl);
 }

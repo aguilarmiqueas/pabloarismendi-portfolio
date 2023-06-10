@@ -14,7 +14,7 @@
 
   // fonts
   --font-size-s: 14px;
-  --font-size-m: 16px;
+  --font-size-m: 17px;
   --font-size-l: 24px;
   --font-size-xl: 48px;
   --line-height: 1.4;
@@ -59,11 +59,12 @@ body {
 h1 {
   font-size: var(--font-size-l);
   max-width: var(--max-width);
+  // margin-bottom: var(--spacing-m);
 }
 
 p {
-  font-size: var(--font-size-m);
-  line-height: 1.6;
+  font-size: var(--font-size-s);
+  line-height: 2;
   margin: var(--spacing-s) 0;
   max-width: var(--max-width);
   width: 100%;

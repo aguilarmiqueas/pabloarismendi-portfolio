@@ -42,7 +42,7 @@ const data = [
 export default function Home() {
   return (
     <main className={"main"}>
-      <section>
+      <section className={styles.sectionMain}>
         <div className={"wrapper"}>
         <h1 className={styles.title}>SIMULTÁNEO series - Inversion by superposition</h1>
         <p className={styles.paragraph}>

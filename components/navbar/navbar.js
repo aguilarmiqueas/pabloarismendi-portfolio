@@ -5,7 +5,7 @@ export const Navbar = () => {
         <Link href="/">SIMULTÁNEO</Link>
         <ul>
             <Link href="/bio">Bio</Link>
-            <Link href="/previous">Previous Works</Link>
+            <Link href="/previous-works">Previous Works</Link>
             <Link href="/contact">Contact</Link>
         </ul>
     </nav>)

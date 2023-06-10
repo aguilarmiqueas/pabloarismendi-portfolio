@@ -60,7 +60,7 @@ export default function Bio() {
             </div>
         </div>
         </section>
-        <section>
+        <section className={styles.sectionVideo}>
             <div className={styles.video}>
                 <div className={styles.vimeoWrap}>
                     <div className={styles.vimeoWrapInner}>
