@@ -1,11 +1,14 @@
 .navbar {
   align-items: center;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: space-between;
-  margin: var(--spacing-l) 0;
+  margin: var(--spacing-l) 0 var(--spacing-m);
   max-width: var(--max-width);
   width: var(--width);
+
+  padding-bottom: var(--spacing-s);
+  border-bottom: 1px solid black;
 
   a {
     font-size: var(--font-size-m);
@@ -15,7 +18,8 @@
 
   ul {
     display: flex;
-    a {
+    align-items: center;
+    a:not(:last-child) {
       margin: 0 1rem;
     }
   }
@@ -23,6 +27,8 @@
 
 @media (min-width: 768px) {
   .navbar {
-    flex-direction: row;
+    ul {
+      margin-top: initial;
+    }
   }
 }

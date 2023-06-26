@@ -41,6 +41,8 @@ const data = [
     src: '/images/simultaneo/5.jpg',
     alt: '',
     quote: `
+    SM05 “El Péndulo” ("the pendulum”) 
+    70x130cm. acrylics on canvas.
     `
   }, 
 ]
@@ -50,13 +52,16 @@ export default function Home() {
     <main className={"main"}>
       <section className={styles.sectionMain}>
         <div className={"wrapper"}>
+        <div className={styles.titleWrap}>
         <h1 className={styles.title}>SIMULTÁNEO series - Inversion by superposition</h1>
+        </div>
+
         <p className={styles.paragraph}>
           I&apos;m looking for the balance between the complexness and deepness but keeping the aesthetic visuals simple and easy to digest. actively in search of contrasts and textures embedded into the composition forming a single thing. The artwork can be splitted into 3 blocks (A and B side + the root structure or matrix, which is the base guideline and link that holds everything together). This is accomplished by a creative process which I call “inversion by superposition”
         </p>
         </div>
 
-        {data.map((media, index) => <div key={index} className={styles.image}>
+        {data.reverse().map((media, index) => <div key={index} className={styles.image}>
           <Media src={media.src} alt={media.alt} quote={media.quote} />
         </div>)}
       </section>

@@ -1,3 +1,4 @@
+import { Media } from '@/components/media/media'
 import styles from './page.module.scss'
 
 export default function Pendulo() {
@@ -5,6 +6,9 @@ export default function Pendulo() {
     <main>
         <section className={styles.pendulo}>
         <div className="wrapper">
+            <div className={styles.image}>
+                <Media src="/images/pendulo.jpg" />
+            </div>
             <div className={styles.inner}>
             <p>El tramado más profundo en las obras prefiero guardármelo para mi, pero en este caso me gustaría hacer una excepción y explayarme por sobre los límites del bastidor y lo que las pinturas pueden relatar. Poder contarles un poco más en profundidad y también así poder desdoblar su exégesis.</p>
             <p>

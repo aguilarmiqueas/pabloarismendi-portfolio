@@ -6,7 +6,6 @@ export const Navbar = () => {
         <ul>
             <Link href="/bio">Bio</Link>
             <Link href="/previous-works">Previous Works</Link>
-            <Link href="/contact">Contact</Link>
         </ul>
     </nav>)
 }

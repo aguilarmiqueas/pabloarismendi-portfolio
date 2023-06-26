@@ -1,5 +1,13 @@
 .title {
-  align-self: flex-start;
+  // align-self: flex-start;
+  text-align: center;
+  // margin-bottom: var(--spacing-m);
+}
+
+.titleWrap {
+  width: 100%;
+  // border-bottom: 1px solid black;
+  margin-bottom: var(--spacing-s);
 }
 
 .image {
