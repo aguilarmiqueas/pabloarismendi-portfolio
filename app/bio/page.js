@@ -9,6 +9,9 @@ export default function Bio() {
     <main>
         <section className={styles.bio}>
         <div className="wrapper">
+            <div className={styles.image}>
+                <Media src="/images/bio/bio_portada.jpg" />
+            </div>
             <div className={styles.inner}>
                 <p>
                     My name is Pablo Arismendi Rabe, born and raised in the city of Resistencia, Chaco. Since I

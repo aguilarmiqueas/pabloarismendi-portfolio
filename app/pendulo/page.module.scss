@@ -1,0 +1,32 @@
+.pendulo {
+  p {
+    font-size: var(--font-size-m);
+  }
+}
+
+.blue {
+  p {
+    color: blue;
+  }
+}
+
+.red {
+  p {
+    color: #c70505;
+  }
+}
+
+@media (min-width: 1024px) {
+  .colors {
+    display: flex;
+    p {
+      font-size: var(--font-size-s);
+    }
+  }
+  .blue {
+    padding-right: var(--spacing-s);
+  }
+  .red {
+    padding-left: var(--spacing-s);
+  }
+}

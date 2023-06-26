@@ -37,6 +37,12 @@ const data = [
     60x80cm. Acrylics on canvas.
     `
   }, 
+  {
+    src: '/images/simultaneo/5.jpg',
+    alt: '',
+    quote: `
+    `
+  }, 
 ]
 
 export default function Home() {
