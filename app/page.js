@@ -45,6 +45,13 @@ const data = [
     70x130cm. acrylics on canvas.
     `
   }, 
+  {
+    src: '/images/simultaneo/6.jpg',
+    alt: '',
+    quote: `
+    SM06 “Cyberpunk Christ” 60x80cm. acrylics on canvas.
+    `
+  }, 
 ]
 
 export default function Home() {
